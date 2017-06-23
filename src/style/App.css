@@ -1,0 +1,78 @@
+.App, ul, li {
+  margin: 0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font-family: inherit;
+  vertical-align: baseline;
+
+}
+
+
+.App-header {
+  text-align: center;
+  padding-top: 10px;
+  height: 80px;
+  margin: 0;
+}
+.App-logo {
+
+  height: 80px;
+}
+
+.router-div{
+  margin: 0;
+  padding:0;
+  border:0;
+}
+ul{
+  list-style: none;
+}
+.nav {
+  font-size: 14px;
+  line-height: 20px;
+  background: url(../images/nav_bg.png) repeat-x;
+  width:100%;
+  text-align: center;
+  position: relative;
+  height: 68px;
+  display: block!important;
+  z-index: 9999;
+  font-weight: 400;
+
+}
+
+.nav_static {
+  position: absolute;
+  top:95px;
+  left: 0;
+}
+
+.nav .menu{
+  text-transform: uppercase;
+  width: 960px;
+  height: 68px;
+  margin: auto;
+  padding-left: 61px;
+}
+
+.nav .menu > li {
+  cursor: pointer;
+  text-decoration: none;
+  color:#fff;
+  float:left;
+  background-image: url(../images/nav_arrow.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  padding:0px,30px;
+  background-color: #ff6600;
+
+}
+
+.nav .menu > li span {
+  display: block;
+  padding: 28px,88px,20px,55px;
+  background-image: url(../images/nav_arrow_left.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}

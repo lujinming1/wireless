@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.7"
   },
   "scripts": {
