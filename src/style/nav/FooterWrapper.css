@@ -1,0 +1,50 @@
+.footerWrapper {
+  width:100%;
+  background: #ff6600;
+  vertical-align: top;
+  margin-top: -16px;
+  font-size: 14px;
+}
+
+.footer {
+  margin: auto;
+  width: 71%;
+  padding-top: 45px;
+
+}
+
+
+
+.footer .nav {
+  color:#fff;
+  width: 100%;
+  margin-left: auto;
+}
+
+.footer .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer .menu > li {
+  width: 22%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.footer .link{
+
+  text-decoration: none;
+}
+.footer .submenu{
+  padding-left: 0;
+}
+
+.footer span {
+  font-weight: bold;
+}

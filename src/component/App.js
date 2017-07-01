@@ -9,10 +9,16 @@ import logo from '../images/logo.PNG';
 import '../style/App.css';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-
-import Home from './Home';
+import TopWapper from './nav/TopWapper';
+import FooterWrapper from'./nav/FooterWrapper';
+import Home from './home/Home';
 import Book from './book/Book';
 import Experiment from './experiment/Experiment';
+
+
+
+
+
 
 const customHistory = createBrowserHistory();
 
@@ -25,30 +31,20 @@ class App extends Component {
         </div>
         <Router history={customHistory}>
             <div className="router-div">
-            <div className="nav nav_static">
-              <ul className="menu">
-                <li><Link to="/">Home</Link></li>
-                <li>
-                  <span>Book</span>
-                  <div>
-                    <ul>
-                      <li><Link to="/book">Book</Link></li>
-                    </ul>
-                  </div>
+              <TopWapper />
+              <div className="wrapper wrapperNavOff">
+                <Route exact path="/" component={Home} />
+                <Route path="/book" component={Book} />
+                <Route path="/experiment" component={Experiment} />
+              </div>
+
+              <FooterWrapper />
 
 
-                </li>
-                <li><Link to="/experiment">Experiment</Link></li>
-              </ul>
-            </div>
-
-            <div>
-            <Route exact path="/" component={Home} />
-            <Route path="/book" component={Book} />
-            <Route path="/experiment" component={Experiment} />
-            </div>
 
           </div>
+
+
         </Router>
 
       </div>

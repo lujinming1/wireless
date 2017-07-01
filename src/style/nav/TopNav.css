@@ -1,0 +1,93 @@
+.topWapper .nav_static {
+  position: absolute;
+  top: 95px;
+  left: 0;
+}
+
+.topWapper .nav{
+  font-size: 14px;
+  line-height: 20px;
+  background: url(../../images/nav_bg.png);
+  width: 100%;
+  text-align: center;
+  height: 68px;
+  display: block!important;
+  z-index: 9999;
+  font-weight: 400;
+}
+
+.topWapper .nav .menu {
+  text-transform: uppercase;
+  width: 71%;
+  height: 68px;
+  margin: auto;
+  padding-left: 14.5%;
+}
+
+.topWapper ul {
+
+  list-style: none;
+}
+
+.topWapper .nav .menu > li {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  float: left;
+  background-image: url(../../images/nav_arrow.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: #ff6600;
+}
+
+.topWapper li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.topWapper .nav .menu > li span {
+  display: block;
+  padding: 28px 88px 20px 55px;
+  color: #fff;
+  background-image: url(../../images/nav_arrow_left.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.topWapper .nav .submenuWrapper {
+  position:absolute;
+  height: 172px;
+  width: 100%;
+  left: 0;
+  top: 68px;
+  background: url(../../images/nav_bg.png) bottom repeat-x;
+  z-index: 9999;
+  display: none;
+
+}
+
+.topWapper .nav .submenuContainer{
+  text-align: left;
+  width: 71%;
+  margin: auto;
+  padding: 15px 0 0 14.5%;
+}
+
+.topWapper .nav .submenu {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  line-height: 17px;
+}
+
+.topWapper .nav .submenu li {
+  margin-bottom: 18px;
+}
+
+.topWapper .link{
+  text-decoration: none;
+}
+
+.topWapper .nav .submenu .link {
+  color: #333333;
+}
