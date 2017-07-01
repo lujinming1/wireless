@@ -11,9 +11,10 @@ import createBrowserHistory from 'history/createBrowserHistory';
 
 import TopWapper from './nav/TopWapper';
 import FooterWrapper from'./nav/FooterWrapper';
-import Home from './home/Home';
-import Book from './book/Book';
-import Experiment from './experiment/Experiment';
+import RouterList from './nav/router/RouterList';
+
+
+
 
 
 
@@ -23,6 +24,28 @@ import Experiment from './experiment/Experiment';
 const customHistory = createBrowserHistory();
 
 class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.navOn = this.navOn.bind(this);
+    this.navOff = this.navOff.bind(this);
+  }
+
+  navOn(){
+    return function(){
+      var wrapper = this.wrapper;
+      wrapper.className = "wrapper wrapperNavOn";
+    }.bind(this);
+  }
+
+  navOff(){
+    return function(){
+      var wrapper = this.wrapper;
+      wrapper.className = "wrapper wrapperNavOff";
+    }.bind(this);
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -31,11 +54,9 @@ class App extends Component {
         </div>
         <Router history={customHistory}>
             <div className="router-div">
-              <TopWapper />
-              <div className="wrapper wrapperNavOff">
-                <Route exact path="/" component={Home} />
-                <Route path="/book" component={Book} />
-                <Route path="/experiment" component={Experiment} />
+              <TopWapper navOn={this.navOn()} navOff={this.navOff()}/>
+              <div ref={(wrapper) => {this.wrapper = wrapper}} className="wrapper wrapperNavOff">
+                <RouterList />
               </div>
 
               <FooterWrapper />

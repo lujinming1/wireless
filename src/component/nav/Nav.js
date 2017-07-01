@@ -10,7 +10,6 @@ import {
 
 class Nav extends Component {
 
-
   render(){
 
     return (
@@ -19,7 +18,7 @@ class Nav extends Component {
         <ul className="menu">
           <li><Link className="link" to="/"><span>首页</span></Link></li>
 
-          <li>
+          <li >
             <span>教材与电子资源</span>
             <div className="submenuWrapper">
               <div className="submenuContainer">

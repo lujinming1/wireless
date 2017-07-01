@@ -4,7 +4,7 @@
   border:0;
   font-size:100%;
   font-family: inherit;
-  vertical-align: baseline;
+
 
 }
 
@@ -20,12 +20,6 @@
   height: 80px;
 }
 
-.router-div{
-  margin: 0;
-  padding:0;
-  border:0;
-}
-
 .wrapper {
 
   background: #efefce;
@@ -34,4 +28,8 @@
 
 .wrapperNavOff {
   margin-top: 5px;
+}
+
+.wrapperNavOn{
+  margin-top: 177px;
 }
