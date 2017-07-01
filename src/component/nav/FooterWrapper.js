@@ -12,10 +12,16 @@ class FooterWrapper extends Component {
     return (
       <div className="footerWrapper">
         <div className="footer">
-
-            <img src={qr_code} className="qrcode" alt="qr_code"/>
-
           <Nav />
+          <div className="footerqrcode">
+            <img src={qr_code} className="qrcode" alt="qr_code"/>
+          </div>
+          <hr />
+          <div className="copyright">
+            <span className="text">
+              版权公告 版权所有。
+            </span>
+          </div>
         </div>
       </div>
     );

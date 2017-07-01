@@ -11,13 +11,28 @@
   width: 71%;
   padding-top: 45px;
 
+
+}
+.footer > div {
+  vertical-align: top;
+  display: inline-block;
+
+}
+.footer .footerqrcode{
+  margin-top: 60px;
+  width: 12%;
 }
 
 
 
+.footer .qrcode{
+  width: 100%;
+
+}
+
 .footer .nav {
   color:#fff;
-  width: 100%;
+  width: 88%;
   margin-left: auto;
 }
 
@@ -31,7 +46,7 @@
 }
 
 .footer .menu > li {
-  width: 22%;
+  width: 25%;
   display: inline-block;
   vertical-align: top;
 }
@@ -47,4 +62,12 @@
 
 .footer span {
   font-weight: bold;
+}
+
+.footer .copyright{
+  color: #fff;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 0px;
 }
