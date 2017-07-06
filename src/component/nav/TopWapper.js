@@ -37,12 +37,12 @@ class TopWapper extends Component {
 
     }
 
-
+    
   render(){
     return (
-      <div className="topWapper">
+      <div className="topWapper" >
 
-            <div className="nav nav_static">
+            <div className="nav nav_static"  >
               <ul className="menu">
                 <li><Link className="link" to="/"><span>首页</span></Link></li>
 

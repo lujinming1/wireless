@@ -32,7 +32,7 @@ class Home extends Component {
 
   componentDidMount() {
     if(this.state.isMount){
-      console.log(true);
+
       const option = this.state.option;
       option.series[0].data = mydata;
       this.setState({ option: option});
