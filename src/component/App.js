@@ -14,13 +14,6 @@ import FooterWrapper from'./nav/FooterWrapper';
 import RouterList from './nav/router/RouterList';
 
 
-
-
-
-
-
-
-
 const customHistory = createBrowserHistory();
 
 class App extends Component {

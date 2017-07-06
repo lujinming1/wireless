@@ -58,7 +58,7 @@ class Nav extends Component {
           </li>
 
           <li>
-              <li><Link className="link" to="/"><span>常见问题</span></Link></li>
+              <li><Link className="link" to="/question"><span>常见问题</span></Link></li>
           </li>
 
         </ul>
