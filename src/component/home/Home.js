@@ -24,7 +24,8 @@ class Home extends Component {
     super(props);
     this.state ={
       option : this.getOption(),
-      isMount : true
+      isMount : true,
+      data : 0
     }
 
     this.getOption = this.getOption.bind(this);
@@ -32,7 +33,6 @@ class Home extends Component {
 
   componentDidMount() {
     if(this.state.isMount){
-
       const option = this.state.option;
       option.series[0].data = mydata;
       this.setState({ option: option});
