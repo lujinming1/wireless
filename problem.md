@@ -6,8 +6,8 @@
   接着，父节点如何得知导航栏发生了变化。    
   一样，react为单向数据流，那么只能在父节点传给导航栏的参数上操作。为此，在父节点中写一个闭包函数。
 在该函数中，通知下方模块导航栏发生了变化。将函数传递给导航栏模块，当导航栏发生变化时，调用函数。    
-<code>navOff(){
-  return function(){
+<code>navOff(){    
+  return function(){    
     var wrapper = this.wrapper;
     wrapper.className = "wrapper wrapperNavOff";
   }.bind(this);
