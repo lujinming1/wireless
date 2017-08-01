@@ -124,7 +124,7 @@ class Home extends Component {
 
 
     return (
-      <div className="Emap" ref={(Emap) => {this.Emap = Emap}} style={{width:'100%',height:'450px'}}>
+      <div className="Emap" ref={(Emap) => {this.Emap = Emap}} style={{width:'100%',height:'600px'}}>
         <ReactEcharts
           option = {this.state.option}
           style = {{height:'95%', width:'100%'}}
